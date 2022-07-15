@@ -313,7 +313,43 @@
 		</div>
 		<div class="col-auto">
 			<a class="btn btn-success" href="#" role="button">작성 <i class="fa-solid fa-pencil"></i></a>
-			<a class="btn btn-danger" href="#" role="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">삭제 <i class="fa-solid fa-trash-can"></i></a>
+			<!-- <a class="btn btn-danger" href="#" role="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">삭제 <i class="fa-solid fa-trash-can"></i></a> -->
+			<a class="btn btn-danger" href="#exampleModalToggle" role="button" data-bs-toggle="modal" data-bs-target="#exampleModalToggle">삭제 <i class="fa-solid fa-trash-can"></i></a>
+			
+			<div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalToggleLabel"><i class="fa-solid fa-trash-can"></i></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-center">
+        삭제하시겠습니까?
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-danger" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">삭제</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalToggleLabel2"><i class="fa-solid fa-trash-can"></i></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        응 안돼~
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Back to first</button>
+      </div>
+    </div>
+  </div>
+</div>
+			
+			<!-- 
 			<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
 			  <div class="modal-dialog modal-sm">
 			    <div class="modal-content">
@@ -331,6 +367,7 @@
 			    </div>
 			  </div>
 			</div>
+			 -->
 			<a class="btn btn-warning" href="#" role="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop1"><i class="fa-solid fa-power-off"></i></a>
 			<div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel1" aria-hidden="true">
 			  <div class="modal-dialog">
