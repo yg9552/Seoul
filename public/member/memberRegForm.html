@@ -33,7 +33,7 @@
   </div>
 </nav>
 
-<form action="#">
+<form action="#" class="needs-validation" novalidate>
 	<div class="container">
 		<h3 class="mb-4">회원등록</h3>
 		<div class="container">
@@ -98,8 +98,11 @@
 		  	</div>
 		  	<div class="col-6 mb-3">
 		  		<div class="form-floating">
-	  				<input type="text" class="form-control" id="floatingInputtel" placeholder="phone number">
+	  				<input type="text" class="form-control" id="floatingInputtel" placeholder="phone number" required="required">
 	  				<label for="floatingInputtel">연락처</label>
+	  				<div class="valid-feedback">
+      					숫자만 입력하세요
+    				</div>
 				</div>
 		  	</div>
 		  	<div class="col-6">
@@ -159,6 +162,26 @@ function setThumbnail(event) {
 
     reader.readAsDataURL(event.target.files[0]);
   }
+  
+//Example starter JavaScript for disabling form submissions if there are invalid fields
+(() => {
+  'use strict'
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  const forms = document.querySelectorAll('.needs-validation')
+
+  // Loop over them and prevent submission
+  Array.from(forms).forEach(form => {
+    form.addEventListener('submit', event => {
+      if (!form.checkValidity()) {
+        event.preventDefault()
+        event.stopPropagation()
+      }
+
+      form.classList.add('was-validated')
+    }, false)
+  })
+})()
 </script>
 </body>
 </html>
