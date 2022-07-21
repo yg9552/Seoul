@@ -6,6 +6,11 @@
 	<title>MemberList</title>
 	<script src="https://kit.fontawesome.com/144448c071.js" crossorigin="anonymous"></script>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+	<style>
+		.clear5 {
+			clear: both; 
+		}
+	</style>
 </head>
 <body>
 
@@ -23,11 +28,12 @@
       <div class="offcanvas-body">
         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#">로그아웃</a>
+            <a class="nav-link" aria-current="page" href="#">로그인</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">마이페이지</a>
+            <a class="nav-link" href="#">회원등록</a>
           </li>
+          <!-- 
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               <i class="fa-solid fa-folder-tree"></i>
@@ -42,6 +48,7 @@
               <li><a class="dropdown-item" href="#">Something else here</a></li>
             </ul>
           </li>
+           -->
         </ul>
       </div>
     </div>
@@ -49,8 +56,8 @@
 </nav>
 
 <div class="container">
-	<h3 class="fs-2 mb-4">회원등록</h3>
-	<div class="row mb-3">
+	<h3 class="fs-2 mb-5">회원등록</h3>
+	<div class="row mb-5">
 		<div class="col-4">
 			<div class="input-group">
   				<span class="input-group-text" id="basic-addon1">지원분야</span>
@@ -75,16 +82,89 @@
 		</div>
 	</div>
 	
-	<div class="row">
-		<div class="col">
+	<div class="float-start me-5">
 			<img class="img-thumbnail" alt="" id="preview" style="width: 160px; height: 145px;">
 			<label id="input-file-button" for="input-file" style="position: relative; left: 25px;">
 				사진첨부 <i class="fa-solid fa-image-portrait"></i>
 			</label>
 			<input type="file" onchange="readURL(this);" id="input-file" style="display:none;">
-		</div>
-
 	</div>
+	<div class="row g-3 mt-3">
+		<div class="col-6">
+			<div class="input-group mb-3">
+			  <span class="input-group-text">이름</span>
+			  <input type="text" class="form-control" placeholder="" aria-describedby="basic-addon1">
+			</div>
+		</div>
+		<div class="col-6">
+			<div class="input-group">
+			  <span class="input-group-text">한문</span>
+			  <input type="text" class="form-control" placeholder="" aria-describedby="basic-addon1">
+			</div>
+		</div>
+		<div class="col-6">
+			<div class="input-group">
+			  <span class="input-group-text">영문</span>
+			  <input type="text" class="form-control" placeholder="" aria-describedby="basic-addon1">
+			</div>
+		</div>
+		<div class="col-6">
+			<div class="input-group">
+			  <span class="input-group-text">생년월일</span>
+			  <input type="date" class="form-control" placeholder="" aria-describedby="basic-addon1">
+			</div>
+		</div>
+	</div>
+	<div class="row g-3 clear5">
+		<div class="col-6">
+			<div class="input-group mb-3">
+			  <span class="input-group-text">휴대폰번호</span>
+			  <input type="text" class="form-control" placeholder="">
+			</div>
+		</div>
+		<div class="col-6">
+			<div class="input-group">
+			  <span class="input-group-text">비상연락망</span>
+			  <input type="text" class="form-control" placeholder="">
+			</div>
+		</div>
+		<div class="col-6">
+			<div class="input-group mb-3">
+			  <span class="input-group-text">이메일</span>
+			  <input type="email" class="form-control" placeholder="">
+			</div>
+		</div>
+		<div class="col-3">
+			<div class="input-group">
+			  <span class="input-group-text">나이</span>
+			  <input type="number" class="form-control" placeholder="">
+			</div>
+		</div>
+		<div class="col-3">
+			<div class="input-group">
+			  <label class="input-group-text" for="inputGroupSelect01">성별</label>
+			  <select class="form-select" id="inputGroupSelect01">
+			    <option selected>선택</option>
+			    <option value="1">남성</option>
+			    <option value="2">여성</option>
+			    <option value="3">기타</option>
+			  </select>
+			</div>
+		</div>
+		<div class="col-10">
+			<div class="input-group mb-3">
+			  <span class="input-group-text">주소</span>
+			  <input type="number" class="form-control" placeholder="">
+			</div>
+		</div>
+		<div class="col-2">
+			<div class="input-group mb-3">
+			  <span class="input-group-text">취미</span>
+			  <input type="number" class="form-control" placeholder="선택사항">
+			</div>
+		</div>
+	</div>
+			
 </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 <script type="text/javascript">
