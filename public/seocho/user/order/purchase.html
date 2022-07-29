@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>구매</title>
+	<script src="https://kit.fontawesome.com/144448c071.js" crossorigin="anonymous"></script>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+	<style type="text/css">
+
+		a {
+			text-decoration: none;
+			color: black;
+		}
+		.white {
+			color: white;
+		}
+		.white:hover {
+			color: #f4e638
+		}
+		.clearboth {
+			clear: both;
+		}
+	</style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg mb-4">
+  <div class="container">
+    <a class="navbar-brand" href="#"><img src="../image/lgo.png" alt="logo" width="210" height="80" class="d-inline-block align-text-top"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+        	<a href="#"><i class="fa-solid fa-user-large"></i> 비회원</a>
+        </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">로그아웃</a>
+          </li>
+          <li class="nav-item" style="font-size: 0.5rem;">
+            <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal" role="button">
+            	<i class="fa-solid fa-magnifying-glass fa-3x"></i>
+            </a>
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			  <div class="modal-dialog">
+			    <div class="modal-content">
+			      <div class="modal-header fs-4">
+			      	<div class="row justify-content-center">
+			      		<div class="col">
+			      			<input type="search" name="">
+			      		</div>
+			      		<div class="col">
+			      			<button type="button" class="btn btn-success">검색</button>
+			      		</div>
+			      	</div>
+			        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+          </li>
+          <li class="nav-item" style="font-size: 0.5rem;">
+            <a class="nav-link" href="#">
+            	<i class="fa-solid fa-cart-shopping fa-3x"></i>
+            </a>
+          </li>
+          <li class="nav-item" style="font-size: 0.5rem;">
+            <a class="nav-link" href="#">
+            	<i class="fa-solid fa-user fa-3x"></i></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<div class="container mb-5">
+	<nav class="navbar navbar-expand" aria-label="Tenth navbar example" style="background-color: #4595d6">
+      <div class="collapse navbar-collapse justify-content-center">
+        <ul class="navbar-nav">
+          <li class="nav-item me-3">
+            <a class="nav-link white" href="#">신상품</a>
+          </li>
+          <li class="nav-item me-3">
+            <a class="nav-link white" href="#">여성</a>
+          </li>
+          <li class="nav-item me-3">
+            <a class="nav-link white" href="#">남성</a>
+          </li>
+          <li class="nav-item me-3">
+            <a class="nav-link white" href="#">아동</a>
+          </li>
+          <li class="nav-item me-3">
+            <a class="nav-link white" href="#">신발</a>
+          </li>
+          <li class="nav-item me-3">
+            <a class="nav-link white" href="#">가방</a>
+          </li>
+          <li class="nav-item me-3">
+            <a class="nav-link white" href="#">ACC</a>
+          </li>
+        </ul>
+      </div>
+  	</nav>
+</div>
+
+
+
+
+
+
+<!-- 
+<footer class="container-fluid bg-light text-center" style="clear: both;">
+	<div>
+		<a class="navbar-brand" href="#"><img src="./image/lgo.png" alt="" width="100" height="40" class="d-inline-block align-text-top"></a>
+	</div>
+	<span class="fs-6 fw-light">회사명 : OOO | 대표자 : OOO | 사업자등록번호 : 000 | 통신판매신고번호 : 000 | 개인정보관리책임자 : OOO | 전화번호 : 000</span><br>
+	<span class="m-auto"><i class="fa-solid fa-copyright"></i> copyright</span>
+</footer>
+ -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<script type="text/javascript">
+const myModal = document.getElementById('myModal')
+const myInput = document.getElementById('myInput')
+
+myModal.addEventListener('shown.bs.modal', () => {
+  myInput.focus()
+})
+</script>
+</body>
+</html>
