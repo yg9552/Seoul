@@ -363,7 +363,7 @@
                         <tbody>
                           <tr>
                             <td> 1 </td>
-                            <td> Herman Beck </td>
+                            <td><a href="#"> Herman Beck </a></td>
                             <td> $ 77.99 </td>
                             <td> May 15, 2015 </td>
                             <td> May 15, 2015 </td>
@@ -372,7 +372,7 @@
                           </tr>
                           <tr>
                             <td> 2 </td>
-                            <td> Messsy Adam </td>
+                            <td><a href="#"> Messsy Adam </a></td>
                             <td> $245.30 </td>
                             <td> July 1, 2015 </td>
                             <td> July 1, 2015 </td>
@@ -381,7 +381,7 @@
                           </tr>
                           <tr>
                             <td> 3 </td>
-                            <td> John Richards </td>
+                            <td><a href="#"> John Richards </a></td>
                             <td> $138.00 </td>
                             <td> Apr 12, 2015 </td>
                             <td> Apr 12, 2015 </td>
@@ -390,7 +390,7 @@
                           </tr>
                           <tr>
                             <td> 4 </td>
-                            <td> Peter Meggik </td>
+                            <td><a href="#"> Peter Meggik </a></td>
                             <td> $ 77.99 </td>
                             <td> May 15, 2015 </td>
                             <td> May 15, 2015 </td>
@@ -399,7 +399,7 @@
                           </tr>
                           <tr>
                             <td> 5 </td>
-                            <td> Edward </td>
+                            <td><a href="#"> John Doe  Edward </a></td>
                             <td> $ 160.25 </td>
                             <td> May 03, 2015 </td>
                             <td> May 03, 2015 </td>
@@ -408,7 +408,7 @@
                           </tr>
                           <tr>
                             <td> 6 </td>
-                            <td> John Doe </td>
+                            <td><a href="#"> John Doe </a></td>
                             <td> $ 123.21 </td>
                             <td> April 05, 2015 </td>
                             <td> April 05, 2015 </td>
@@ -417,7 +417,7 @@
                           </tr>
                           <tr>
                             <td> 7 </td>
-                            <td> Henry Tom </td>
+                            <td><a href="#"> Henry Tom </a></td>
                             <td> $ 150.00 </td>
                             <td> June 16, 2015 </td>
                             <td> June 16, 2015 </td>
@@ -427,8 +427,8 @@
                         </tbody>
                       </table>
                     </div>
-                    <div class="row">
-                    	<div class="col">
+                    <div class="row mt-3">
+                    	<div class="col-1">
                     		<select class="form-control">
 		                        <option>삭제여부</option>
 		                        <option>N</option>
@@ -447,9 +447,15 @@
                     	<div class="col">
                     		<input type="search" class="form-control" placeholder="연락처">
                     	</div>
-                    	<div class="col">
+                    	<div class="col-1">
+                    		<input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="등급">
+							<datalist id="datalistOptions">
+							  <option value="Silver">
+							  <option value="Gold">
+							  <option value="VIP">
+							</datalist>	
                     	</div>
-                    	<div class="col my-auto">
+                    	<div class="col-auto my-auto">
                     		<button type="button" class="btn btn-inverse-success btn-fw">검색</button>
                     	</div>
                     </div>
