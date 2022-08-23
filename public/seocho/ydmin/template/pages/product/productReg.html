@@ -346,112 +346,61 @@
               <h3 class="page-title">상품관리</h3>
             </div>
             <div class="row">
-              <div class="col-md-12 grid-margin stretch-card">
+              <div class="col-12 grid-margin stretch-card">
                 <div class="card">
                   <div class="card-body">
-                    <h4 class="card-title">상품목록</h4>
-                    <div class="table-responsive">
-                      <table class="table table-dark text-danger table-hover mb-3 text-center">
-                        <thead>
-                          <tr style="font-size: 1.7rem;">
-                            <th>
-								<div class="form-check form-check-flat form-check-primary">
-			                        <label class="form-check-label"><input type="checkbox" class="form-check-input"></label>
-			                    </div>
-							</th>
-                            <th style="font-size: 1.7rem;">
-                            	<span">상품명</span>
-                            </th>
-                            <th style="font-size: 1.7rem;">가격</th>
-                            <th style="font-size: 1.7rem;">등록일</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td>
-                            	<div class="form-check form-check-flat form-check-primary">
-			                        <label class="form-check-label"><input type="checkbox" class="form-check-input"></label>
-			                    </div>
-                            </td>
-                            <td><a href="#"> Herman Beck </a></td>
-                            <td> $ 77.99 </td>
-                            <td> May 15, 2015 </td>
-                          </tr>
-                          <tr>
-                            <td>
-                            	<div class="form-check form-check-flat form-check-primary">
-			                        <label class="form-check-label"><input type="checkbox" class="form-check-input"></label>
-			                    </div>
-                            </td>
-                            <td><a href="#"> Messsy Adam </a></td>
-                            <td> $245.30 </td>
-                            <td> July 1, 2015 </td>
-                          </tr>
-                          <tr>
-                            <td>
-                            	<div class="form-check form-check-flat form-check-primary">
-			                        <label class="form-check-label"><input type="checkbox" class="form-check-input"></label>
-			                    </div>
-                            </td>
-                            <td><a href="#"> John Richards </a></td>
-                            <td> $138.00 </td>
-                            <td> Apr 12, 2015 </td>
-                          </tr>
-                          <tr>
-                            <td>
-                            	<div class="form-check form-check-flat form-check-primary">
-			                        <label class="form-check-label"><input type="checkbox" class="form-check-input"></label>
-			                    </div>
-                            </td>
-                            <td><a href="#"> Peter Meggik </a></td>
-                            <td> $ 77.99 </td>
-                            <td> May 15, 2015 </td>
-                          </tr>
-                          <tr>
-                            <td>
-                            	<div class="form-check form-check-flat form-check-primary">
-			                        <label class="form-check-label"><input type="checkbox" class="form-check-input"></label>
-			                    </div>
-                            </td>
-                            <td><a href="#"> Edward </a></td>
-                            <td> $ 160.25 </td>
-                            <td> May 03, 2015 </td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                    <nav aria-label="Page navigation example">
-					  <ul class="pagination pagination-sm justify-content-center">
-					  	<li class="page-item">
-					      <a class="page-link" href="#" aria-label="Previous">
-					        <span aria-hidden="true"><i class="fa-solid fa-angles-left"></i></span>
-					      </a>
-					    </li>
-					    <li class="page-item">
-					      <a class="page-link" href="#"><i class="fa-solid fa-angle-left"></i></i></a>
-					    </li>
-					    <li class="page-item active"><a class="page-link" href="#">1</a></li>
-					    <li class="page-item"><a class="page-link" href="#">2</a></li>
-					    <li class="page-item"><a class="page-link" href="#">3</a></li>
-					    <li class="page-item">
-					      <a class="page-link" href="#"><i class="fa-solid fa-angle-right"></i></a>
-					    </li>
-					    <li class="page-item">
-					      <a class="page-link" href="#" aria-label="Next">
-					        <span aria-hidden="true"><i class="fa-solid fa-angles-right"></i></span>
-					      </a>
-					    </li>
-					  </ul>
-					</nav>
-                    <div class="row justify-content-between">
-	                  	<div class="col-auto me-auto">
-	                  		<a href="#" class="btn btn-inverse-success btn-fw">검색</a>
-	                  	</div>
-	                  	<div class="col-auto">
-	                  		<a href="#" class="btn btn-inverse-info btn-fw">상품등록</a>
-	                  		<a href="#" class="btn btn-inverse-danger btn-fw">삭제</a>
-	                  	</div>
-                  	</div>
+                    <h4 class="card-title">상품등록</h4>
+                    <form class="forms-sample">
+                      <div class="form-group">
+                        <label for="exampleInputName1">상품명</label>
+                        <input type="text" class="form-control" id="exampleInputName1" placeholder="Name">
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputPrice">가격</label>
+                        <input type="email" class="form-control" id="exampleInputPrice" placeholder="Price">
+                      </div>
+                      <div class="form-group">
+                        <label>상품이미지</label>
+                        <input type="file" name="img[]" class="file-upload-default">
+                        <div class="input-group col-xs-12">
+                          <input type="text" class="form-control file-upload-info" disabled placeholder="Upload Image">
+                          <span class="input-group-append">
+                            <button class="file-upload-browse btn btn-primary" type="button">Upload</button>
+                          </span>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputOrigin">원산지</label>
+                        <input type="email" class="form-control" id="exampleInputOrigin" placeholder="Price">
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputCity1">배송정보</label>
+                        <input type="text" class="form-control" id="exampleInputCity1" placeholder="배송비">
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleSelectOption">옵션</label>
+                        <select class="form-control" id="exampleSelectOption">
+                          <option></option>
+                          <option></option>
+                        </select>
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleTextarea1">상세정보</label>
+                        <textarea class="form-control" id="exampleTextarea1" rows="4"></textarea>
+                      </div>
+                      <div class="form-group">
+                        <label>상품상세이미지</label>
+                        <input type="file" name="img[]" class="file-upload-default">
+                        <div class="input-group col-xs-12">
+                          <input type="text" class="form-control file-upload-info" disabled placeholder="Upload Image">
+                          <span class="input-group-append">
+                            <button class="file-upload-browse btn btn-primary" type="button">Upload</button>
+                          </span>
+                        </div>
+                      </div>
+                      <button type="submit" class="btn btn-primary mr-2">Submit</button>
+                      <button class="btn btn-dark">Cancel</button>
+                    </form>
                   </div>
                 </div>
               </div>
