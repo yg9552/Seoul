@@ -92,7 +92,7 @@
             </a>
           </li>
           <li class="nav-item menu-items">
-            <a class="nav-link" href="./productMain.html">
+            <a class="nav-link" href="../product/productMain.html">
               <span class="menu-icon">
                 <i class="mdi mdi-format-list-bulleted"></i>
               </span>
@@ -454,7 +454,7 @@
 	                  	</div>
 	                  	<div class="col-auto">
 	                  		<a href="./Q&AAnswer.html" class="btn btn-inverse-primary btn-fw">답변하기</a>
-	                  		<a href="#" class="btn btn-inverse-danger btn-fw">삭제</a>
+	                  		<button type="button" class="btn btn-inverse-danger btn-fw">삭제</button>
 	                  	</div>
                   	</div>
                   </div>
@@ -491,5 +491,13 @@
     <!-- endinject -->
     <!-- Custom js for this page -->
     <!-- End custom js for this page -->
+    <script type="text/javascript">
+    const myModal = document.getElementById('myModal')
+    const myInput = document.getElementById('myInput')
+
+    myModal.addEventListener('shown.bs.modal', () => {
+      myInput.focus()
+    })
+    </script>
   </body>
 </html>
