@@ -374,8 +374,21 @@
                         <input type="email" class="form-control" id="exampleInputOrigin" placeholder="Price">
                       </div>
                       <div class="form-group">
-                        <label for="exampleInputCity1">배송정보</label>
-                        <input type="text" class="form-control" id="exampleInputCity1" placeholder="배송비">
+                        <label for="exampleSelectDeliveryInfo">배송종류</label>
+                        <select class="form-control" id="exampleSelectDeliveryInfo">
+                          <option>국내배송</option>
+                          <option>해외배송</option>
+                        </select>
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleSelectDeliveryFee">배송비</label>
+                        <select class="form-control" id="exampleSelectDeliveryFee">
+                          <option>무료배송</option>
+                          <option>3000원</option>
+                          <option>4000원</option>
+                          <option>5000원</option>
+                          <option>10000원</option>
+                        </select>
                       </div>
                       <div class="form-group">
                         <label for="exampleSelectOption">옵션</label>
@@ -398,8 +411,9 @@
                           </span>
                         </div>
                       </div>
-                      <button type="submit" class="btn btn-primary mr-2">Submit</button>
-                      <button class="btn btn-dark">Cancel</button>
+                      <button type="submit" class="btn btn-success mr-2">상품등록</button>
+                      <button type="reset" class="btn btn-warning mr-2">초기화</button>
+                      <a href="./productMain.html" class="btn btn-dark">목록</a>
                     </form>
                   </div>
                 </div>
